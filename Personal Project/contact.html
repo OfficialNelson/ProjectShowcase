@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Nelson Kan Portfolio: Contact</title>
+  <link href="portfolio.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+    }
+
+    .form-group label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      padding: 5px;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+    }
+
+    input[type="submit"] {
+      padding: 10px 20px;
+    }
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<div id="top">
+  <header>
+    <h1><a href="index.html">Nelson Kan Portfolio</a></h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Contact Me!</h2>
+    <h3>Send me an email below or message me on <a href="https://www.linkedin.com/in/nelsonkan" target="_blank">LinkedIn <i class="fab fa-linkedin"></i></a></h3>
+    <p>Required fields are marked with an asterisk *</p>
+
+    <form onsubmit="event.preventDefault(); validateForm();">
+      <div class="form-group">
+        <label for="myFName">*First Name:</label>
+        <input type="text" id="myFName" name="myFName" required="required">
+      </div>
+
+      <div class="form-group">
+        <label for="myLName">*Last Name:</label>
+        <input type="text" id="myLName" name="myLName" required="required">
+      </div>
+
+      <div class="form-group">
+        <label for="mySubject">*Subject:</label>
+        <input type="text" id="mySubject" name="mySubject" required="required">
+      </div>
+
+      <div class="form-group">
+        <label for="myMessage">*Message:</label>
+        <textarea id="myMessage" name="myMessage" rows="15" cols="30" required="required"></textarea>
+      </div>
+
+      <input type="submit" value="Submit">
+    </form>
+
+  </main>
+
+  <footer>
+    &copy; 2023 Nelson Kan Portfolio<br>
+    <a href="mailto:OfficialNelsonKan@gmail.com">OfficialNelsonKan@gmail.com</a>
+  </footer>
+
+  <script>
+    function validateForm() {
+      var firstName = document.getElementById('myFName').value;
+      var lastName = document.getElementById('myLName').value;
+      var subject = document.getElementById('mySubject').value;
+      var message = document.getElementById('myMessage').value;
+
+      if (firstName === "" || lastName === "" || subject === "" || message === "") {
+        alert("Please fill in all required fields.");
+      } else {
+        sendEmail();
+      }
+    }
+
+    function sendEmail() {
+      var firstName = document.getElementById('myFName').value;
+      var lastName = document.getElementById('myLName').value;
+      var subject = document.getElementById('mySubject').value;
+      var message = document.getElementById('myMessage').value;
+
+      var body = "First Name: " + firstName + "\n";
+      body += "Last Name: " + lastName + "\n";
+      body += "Subject: " + subject + "\n";
+      body += "Message: " + message;
+
+      var mailtoLink = "mailto:officialnelsonkan@gmail.com";
+      mailtoLink += "?subject=" + encodeURIComponent(subject);
+      mailtoLink += "&body=" + encodeURIComponent(body);
+
+      window.location.href = mailtoLink;
+    }
+  </script>
+</div>
+
+</html>

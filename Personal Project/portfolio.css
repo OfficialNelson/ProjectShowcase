@@ -1,0 +1,306 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #EAEAEA;
+  color: #666666;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#top {
+  background-color: #90C7E3;
+  background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3);
+  background-repeat: no-repeat;
+}
+
+header {
+  background-color: #002171;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header a:link {
+  color: #FFF;
+}
+
+header a:visited {
+  color: #FFF;
+}
+
+header a:hover {
+  color: #90C7E3;
+}
+
+nav {
+  font-weight: bold;
+  margin-top: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 120%;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+  font-size: 1.2em;
+}
+
+nav li {
+  border-bottom: 1px solid #000033;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:link {
+  color: #5C7FA3;
+}
+
+nav a:visited {
+  color: #344873;
+}
+
+nav a:hover {
+  color: #A52A2A;
+}
+
+main {
+  padding: 1px 20px 20px 20px;
+  display: block;
+  background-color: #FFF;
+  padding-left: 30px;
+  overflow: auto;
+}
+
+h1 {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  letter-spacing: 0.25em;
+}
+
+h2 {
+  color: #1976D2;
+  font-family: Georgia, "Times New Roman", serif;
+  text-shadow: 1px 1px 1px #CCC;
+}
+
+h3 {
+  color: #000033;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+main ul {
+  list-style-image: url(marker.gif);
+}
+
+dt {
+  color: #002171;
+}
+
+.resort {
+  color: #1976D2;
+  font-weight: bold;
+}
+
+#contact {
+  font-size: 90%;
+}
+
+footer {
+  font-size: 75%;
+  font-style: italic;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", serif;
+  padding: 2em;
+  background-color: #FFF;
+}
+
+#webpropic {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+  	height: 600px;
+  background-image: url(webpropic.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+
+table {
+  border: 2px solid #3399CC;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 0.5em;
+  border: 2px solid #3399CC;
+}
+
+td {
+  text-align: center;
+}
+
+.text {
+  text-align: left;
+}
+
+tr:nth-of-type(odd) {
+  background-color: #F5FAFC;
+}
+
+form {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+input,
+textarea {
+  margin-bottom: 0.5em;
+}
+
+body {
+  background-color: #87CEEB;
+  color: #5DADE2;
+}
+
+header {
+  background-color: #5DADE2;
+}
+
+nav a:link,
+nav a:visited {
+  color: #87CEEB;
+}
+nav a { text-decoration: none;
+}
+nav a:hover {
+  color: #FFA500;
+}
+
+h1 {
+  color: #FFFFFF;
+}
+
+.social-icons {
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  color: #5DADE2;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.social-icons a:hover {
+  color: #FFA500;
+}
+
+.download-button a {
+  text-decoration: none;
+}
+
+.download-button-span {
+  background-color: #5DADE2;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download-button-span:hover {
+  background-color: #FFA500;
+}
+
+
+table {
+  border: 2px solid #5DADE2;
+  width: 100%;
+}
+
+td,
+th {
+  border: 2px solid #5DADE2;
+  padding: 10px; /* Adjust the padding as needed */
+}
+
+tr:nth-of-type(odd) {
+  background-color: #B0E0E6;
+}
+
+form {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+input,
+textarea {
+  margin-bottom: 0.5em;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+  #webpropic {
+    display: none;
+  }
+  h1 {
+    font-size: 1.2em;
+  }
+
+  h2 {
+    font-size: 1.0em;
+  }
+
+  nav ul {
+    font-size: 0.8em;
+  }
+
+  /* Adjust table styles for smaller screens */
+  table {
+    width: 100%;
+  }
+
+  td,
+  th {
+    padding: 5px; /* Adjust the padding as needed */
+  }
+
+  tr:nth-of-type(odd) {
+    background-color: #F5FAFC;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /* Desktop Styles */
+  #webpropic {
+    display: none;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  nav ul {
+    font-size: 1em;
+  }
+}
